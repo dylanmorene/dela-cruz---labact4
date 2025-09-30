@@ -27,15 +27,15 @@ A Node.js/Express API project to explore SQL queries with MySQL. This project he
    ```bash
    npm install
    
-API Endpoints
-Endpoint	Method	Description
-/api/reports/users-with-roles	GET	List all users with their assigned roles (INNER JOIN).
-/api/reports/users-with-profiles	GET	List all users with profiles, including users without profiles (LEFT JOIN).
-/api/reports/roles-right-join	GET	List roles with assigned users, including roles with no users (RIGHT JOIN).
-/api/reports/profiles-full-outer	GET	Emulate full outer join for users and profiles (LEFT + RIGHT JOIN with UNION).
-/api/reports/user-role-combos	GET	Generate all possible user-role combinations (CROSS JOIN).
-/api/reports/referrals	GET	Show referral relationships (SELF JOIN / INNER JOIN).
-/api/reports/latest-login	GET	Retrieve each user’s most recent login IP and timestamp (LEFT JOIN + subquery).
+## API Endpoints
+   Endpoint	Method	                                       Description
+/api/reports/users-with-roles	 GET	List all users with their assigned roles (INNER JOIN).
+/api/reports/users-with-profiles	 GET	List all users with profiles, including users without profiles (LEFT JOIN).
+/api/reports/roles-right-join	 GET	List roles with assigned users, including roles with no users (RIGHT JOIN).
+/api/reports/profiles-full-outer	 GET	Emulate full outer join for users and profiles (LEFT + RIGHT JOIN with UNION).
+/api/reports/user-role-combos	 GET	Generate all possible user-role combinations (CROSS JOIN).
+/api/reports/referrals	 GET	Show referral relationships (SELF JOIN / INNER JOIN).
+/api/reports/latest-login 	GET	Retrieve each user’s most recent login IP and timestamp (LEFT JOIN + subquery).
 Query Types Overview
 
 INNER JOIN: Users with roles
